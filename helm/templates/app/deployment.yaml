@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  labels:
+    name: app
+  annotations:
+    'helm.sh/hook-weight': {{ .Values.order.app | quote }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: todo
+          image: rurumimic/todo:0.0.1
+          ports:
+            - containerPort: 3000
