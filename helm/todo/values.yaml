@@ -1,0 +1,3 @@
+order: # Launch order
+  app: 0
+  nginx: 1
