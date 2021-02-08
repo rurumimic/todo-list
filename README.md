@@ -48,7 +48,13 @@ Install the chart:
 
 ```bash
 helm repo update
-helm install todo todo-list --version 0.0.1
+helm install todo todo-list/todo --version 0.0.1
+```
+
+### Clean up
+
+```bash
+helm uninstall todo
 ```
 
 ### Helm dry run
