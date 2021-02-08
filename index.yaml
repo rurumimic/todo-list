@@ -1,0 +1,16 @@
+apiVersion: v1
+entries:
+  todo:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2021-02-08T09:24:57.455128319Z"
+    description: A Helm chart for Kubernetes
+    digest: 839bf34cb3953c770bbdbaa7073b0f6afcf0fb4b1057b5aa4ebe1c7dd719d233
+    maintainers:
+    - name: rurumimic
+    name: todo
+    type: application
+    urls:
+    - https://github.com/rurumimic/todo-list/releases/download/todo-0.0.1/todo-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-02-08T09:24:57.368570724Z"
